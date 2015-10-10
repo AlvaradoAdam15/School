@@ -1,0 +1,14 @@
+{
+    "name": "adam/school",
+    "authors": [
+        {
+            "name": "adam Alvarado",
+            "email": "adamalvarado@iesebre.com"
+        }
+    ],
+    "autoload": {
+    "psr-4" : {
+        "Com\\Iesebre\\Dam2\\adamalvarado\\" : "src"
+    }
+  }
+}
