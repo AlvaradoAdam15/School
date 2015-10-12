@@ -8,7 +8,6 @@
 
 namespace Com\Iesebre\Dam2\adamalvarado\resume;
 
-
 class Study
 {
     public $name; //Name Study
@@ -33,8 +32,6 @@ class Study
         $this->yearsDuration = $yearsDuration;
         $this->category = $category;
     }
-
-
 
     /**
      * @return mixed

@@ -47,7 +47,6 @@ class Person
         $this->country = $country;
     }
 
-
     /**
      * @return mixed
      * Getter PersonalID

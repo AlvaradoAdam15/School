@@ -10,34 +10,34 @@ namespace Com\Iesebre\Dam2\adamalvarado\resume;
  */
 class StudyModule extends Study
 {
-    public $name; //Name Module
+    public $nameModule; //Name Module
 
     /**
      * StudyModule constructor.
-     * @param $name
+     * @param $nameModule
      */
-    public function __construct($name)
+    public function __construct($nameModule)
     {
-        $this->name = $name;
+        $this->nameModule = $nameModule;
     }
+
 
     /**
      * @return mixed
-     * Getter Name
      */
-    public function getName()
+    public function getNameModule()
     {
-        return $this->name;
+        return $this->nameModule;
     }
 
     /**
-     * @param mixed $name
-     * Setter Name
+     * @param mixed $nameModule
      */
-    public function setName($name)
+    public function setNameModule($nameModule)
     {
-        $this->name = $name;
+        $this->nameModule = $nameModule;
     }
+
 
 
 }

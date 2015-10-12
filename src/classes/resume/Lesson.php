@@ -4,7 +4,6 @@ namespace Com\Iesebre\Dam2\adamalvarado\resume;
 
 
 use Com\Iesebre\Dam2\adamalvarado\persons\Teacher;
-use Com\Iesebre\Dam2\adamalvarado\resume\ClassGroup;
 
 /**
  * Created by PhpStorm.
@@ -13,40 +12,39 @@ use Com\Iesebre\Dam2\adamalvarado\resume\ClassGroup;
  * Time: 19:43
  */
 
-class Lesson extends StudySubModule {
+class Lesson extends StudySubModule{
 
-    public $description;  //Description an one hour in class
+    public $descriptionLesson;  //Description an one hour in class
 
     public $teacher; //Teacher
 
-    public $classGroup; //Classe receiving lesson
+    public $classGroup;
 
     /**
      * Lesson constructor.
      * @param $teacher
+     * @param $classGroup
      */
     public function __construct(Teacher $teacher, ClassGroup $classGroup)
     {
         $this->teacher = $teacher;
+        $this->classGroup = $classGroup;
     }
 
     /**
      * @return mixed
-     * Getter description
      */
-    public function getDescription()
+    public function getDescriptionLesson()
     {
-        return $this->description;
+        return $this->descriptionLesson;
     }
 
     /**
-     * @param mixed $description
-     * Setter description
+     * @param mixed $descriptionLesson
      */
-    public function setDescription($description)
+    public function setDescriptionLesson($descriptionLesson)
     {
-        $this->description = $description;
+        $this->descriptionLesson = $descriptionLesson;
     }
-
 
 }
