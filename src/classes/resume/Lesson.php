@@ -4,6 +4,8 @@ namespace Com\Iesebre\Dam2\adamalvarado\resume;
 
 
 use Com\Iesebre\Dam2\adamalvarado\persons\Teacher;
+use Com\Iesebre\Dam2\adamalvarado\resume\ClassGroup;
+
 /**
  * Created by PhpStorm.
  * User: adam
@@ -11,17 +13,19 @@ use Com\Iesebre\Dam2\adamalvarado\persons\Teacher;
  * Time: 19:43
  */
 
-class Lesson {
+class Lesson extends StudySubModule {
 
     public $description;  //Description an one hour in class
 
     public $teacher; //Teacher
 
+    public $classGroup; //Classe receiving lesson
+
     /**
      * Lesson constructor.
      * @param $teacher
      */
-    public function __construct(Teacher $teacher)
+    public function __construct(Teacher $teacher, ClassGroup $classGroup)
     {
         $this->teacher = $teacher;
     }

@@ -13,6 +13,15 @@ class StudyModule extends Study
     public $name; //Name Module
 
     /**
+     * StudyModule constructor.
+     * @param $name
+     */
+    public function __construct($name)
+    {
+        $this->name = $name;
+    }
+
+    /**
      * @return mixed
      * Getter Name
      */

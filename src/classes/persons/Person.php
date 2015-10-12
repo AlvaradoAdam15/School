@@ -2,6 +2,8 @@
 
 namespace Com\Iesebre\Dam2\adamalvarado\persons;
 
+use Com\Iesebre\Dam2\adamalvarado\otherClasses\Location;
+
 /**
  * Created by PhpStorm.
  * User: adam
@@ -12,13 +14,39 @@ class Person
 {
     public $personalId; //Document NIF, NIE , DNI
     public $givenName; //Name
-    public $sn1; //Last Name
-    public $sn2; //Secon Last Name
+    public $sn1; //Surname
+    public $sn2; //Secon Surname
     public $email; //Email Address
     public $locality; //Loacality
     public $postalCode; //Postal Code
     public $state; //State
     public $country; //Country
+
+    /**
+     * Person constructor.
+     * @param $personalId
+     * @param $givenName
+     * @param $sn1
+     * @param $sn2
+     * @param $email
+     * @param $locality
+     * @param $postalCode
+     * @param $state
+     * @param $country
+     */
+    public function __construct($personalId, $givenName, $sn1, $sn2, $email, Location $locality, $postalCode, $state, $country)
+    {
+        $this->personalId = $personalId;
+        $this->givenName = $givenName;
+        $this->sn1 = $sn1;
+        $this->sn2 = $sn2;
+        $this->email = $email;
+        $this->locality = $locality;
+        $this->postalCode = $postalCode;
+        $this->state = $state;
+        $this->country = $country;
+    }
+
 
     /**
      * @return mixed

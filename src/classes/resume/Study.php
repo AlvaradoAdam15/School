@@ -20,6 +20,23 @@ class Study
     public $category; //Categoty Study for example Superior Module, College...
 
     /**
+     * Study constructor.
+     * @param $name
+     * @param $description
+     * @param $yearsDuration
+     * @param $category
+     */
+    public function __construct($name, $description, $yearsDuration, $category)
+    {
+        $this->name = $name;
+        $this->description = $description;
+        $this->yearsDuration = $yearsDuration;
+        $this->category = $category;
+    }
+
+
+
+    /**
      * @return mixed
      * Getter Name Study
      */

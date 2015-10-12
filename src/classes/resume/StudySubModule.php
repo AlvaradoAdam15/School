@@ -15,6 +15,18 @@ class StudySubModule extends StudyModule
     public $hoursDuration; //Duration SubModule with Hours
 
     /**
+     * StudySubModule constructor.
+     * @param $formativeUnit
+     * @param $hoursDuration
+     */
+    public function __construct($formativeUnit, $hoursDuration)
+    {
+        $this->formativeUnit = $formativeUnit;
+        $this->hoursDuration = $hoursDuration;
+    }
+
+
+    /**
      * @return mixed
      * Getter Formative Unit
      */
