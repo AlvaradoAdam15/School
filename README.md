@@ -10,7 +10,7 @@ $ composer install
 
  [Diagrama UML](https://help.github.com/articles/github-flavored-markdown/)
  
- 
+ [Imatge Diagrama UML](https://raw.githubusercontent.com/AlvaradoAdam15/School/master/Diagrama.png)
 
 # Pàgina Web
 
